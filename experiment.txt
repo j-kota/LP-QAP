@@ -1,0 +1,22 @@
+lr : 0.001
+quad_reg : 0.01
+align : 36
+num_examples_train : 4000
+num_examples_test : 1000
+edge_density : 0.2
+random_noise : False
+noise : 0.03
+noise_model : 2
+generative_model : Regular
+iterations : 20000
+batch_size : 1
+mode : train
+path_dataset : 
+path_logger : 
+print_freq : 100
+test_freq : 500
+save_freq : 2000
+clip_grad_norm : 40.0
+num_features : 20
+num_layers : 20
+J : 4

@@ -1,0 +1,21 @@
+############
+#
+# Example submit file for vanilla job
+#
+############
+
+getenv = True
+request_cpus = 4
+
+Requirements            = TARGET.vm_name == "ITS-U18-NFS-20191029"
+
+
+Universe       = vanilla
+Executable     = /home/jkotary/QAP-LP/src/qap/main_runs.sh
+Arguments      = $(a) $(b) $(c) $(d) $(e) $(f) $(g) $(h)
+
+input   = /dev/null
+#output  = /home/jkotary/dnn-jobshop/out/JobshopAgentJM_runs_$(jj).out
+error   = /home/jkotary/QAP-LP/src/qap/log/main_runs_$(h).error
+
+Queue a,b,c,d,e,f,g,h from main_runs.in
